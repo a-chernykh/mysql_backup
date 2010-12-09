@@ -17,4 +17,4 @@ $find $backup_path -name '*.sql.gz' -and -mtime +7 | xargs rm > /dev/null 2>&1
 
 # Do the backup
 $mysqldump -h $mysqlhost -u $mysqluser -p$mysqlpassword --comments -R --databases $mysqldatabases > $backup_path/$backup_name
-$gzip $backup_path/$backup_name
+$gzip -f $backup_path/$backup_name
