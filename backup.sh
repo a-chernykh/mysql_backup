@@ -5,7 +5,7 @@ gzip=`which gzip`
 find=`which find`
 
 # Options
-backup_path="/root/mysqlbackup"
+backup_path="/var/backup/mysql"
 mysqlhost="127.0.0.1"
 mysqluser="root"
 mysqlpassword="root"
